@@ -1,0 +1,52 @@
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    /* Responsive grid logic */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    background-color: rgb(109, 29, 205);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+}
+
+.box {
+    background-color: #e3f2fd; /* Light Blue */
+    border: 1px solid #90caf9;
+    color: #1565c0; /* Darker Blue Text */
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: #bbdefb;
+}
+
+.answers {
+    margin-top: 20px;
+}
+
+.answers h2 {
+    color: blue;
+}
+
+.answers h3 {
+    color: green;
+}
+
+.answers code {
+    background: yellow;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Task 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Task 8: Auto-fit, Minmax & Responsive Grid</h1>
+    
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+        <div class="box">Box 6</div>
+        <div class="box">Box 7</div>
+        <div class="box">Box 8</div>
+        <div class="box">Box 9</div>
+        <div class="box">Box 10</div>
+        <div class="box">Box 11</div>
+        <div class="box">Box 12</div>
+    </div>
+
+    <section class="answers">
+        <h2>Answers</h2>
+        
+        <h3>1. What problem does auto-fit solve?</h3>
+        <p>Auto-fit solves the problem of empty space. It fits as many columns as possible into the container and wraps items to new rows if there isn't enough space.</p>
+
+        <h3>2. Why is minmax important?</h3>
+        <p>Minmax ensures items have a minimum size (e.g., 200px) so they don't become too small, while allowing them to grow (1fr) to fill available space.</p>
+
+        <h3>3. Do items shrink too much?</h3>
+        <p>No, because minmax(200px, 1fr) prevents them from shrinking below 200px.</p>
+
+        <h3>4. Is this layout mobile friendly?</h3>
+        <p>Yes! It automatically adjusts from multiple columns on desktop to a single column on mobile without extra code.</p>
+
+        <h3>5. Why are media queries not needed here?</h3>
+        <p>Because CSS Grid logic (auto-fit + minmax) handles the responsiveness natively based on available width.</p>
+    </section>
+</body>
+</html>
