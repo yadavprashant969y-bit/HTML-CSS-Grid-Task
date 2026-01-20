@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3: Fixed vs Flexible Columns</title>
+    <link rel="stylesheet" href="task3.css">
+</head>
+
+<body>
+    <h1>Fixed vs Flexible Columns</h1>
+
+    <h2>Fixed Layout (200px 200px 200px)</h2>
+    <div class="container-fixed">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+
+    <h2>Flexible Layout (1fr 1fr 1fr)</h2>
+    <div class="container-flexible">
+        <div class="box box4">Box 1</div>
+        <div class="box box5">Box 2</div>
+        <div class="box box6">Box 3</div>
+    </div>
+
+    <h2>Answers</h2>
+    <ol>
+        <li><strong>Which layout breaks faster on small screens?</strong><br>
+            Fixed layout (px) breaks faster - it overflows when screen is smaller than 600px.</li>
+
+        <li><strong>Which layout adjusts automatically?</strong><br>
+            Flexible layout (fr) adjusts automatically to any screen size.</li>
+
+        <li><strong>Why is fixed layout risky?</strong><br>
+            It can overflow, cause horizontal scrolling, and break on mobile devices.</li>
+
+        <li><strong>Where can fixed columns be useful?</strong><br>
+            Sidebars, navigation menus, or elements that need exact width.</li>
+
+        <li><strong>Which unit would you choose for responsive website?</strong><br>
+            fr unit - it's flexible and works on all screen sizes.</li>
+    </ol>
+</body>
+
+</html>

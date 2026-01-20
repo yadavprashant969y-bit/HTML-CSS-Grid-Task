@@ -1,0 +1,43 @@
+/* Fixed Layout - uses px */
+.container-fixed {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    margin-bottom: 30px;
+}
+
+/* Flexible Layout - uses fr */
+.container-flexible {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 30px;
+}
+
+.box {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.box1 {
+    background-color: lightcoral;
+}
+
+.box2 {
+    background-color: lightgreen;
+}
+
+.box3 {
+    background-color: lightblue;
+}
+
+.box4 {
+    background-color: lightyellow;
+}
+
+.box5 {
+    background-color: lightpink;
+}
+
+.box6 {
+    background-color: lightcyan;
+}
