@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: grid;
+    /* Industry standard 12-column grid */
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    border: 2px solid orange;
+    padding: 10px;
+    background-color: white;
+}
+
+.box {
+    background-color: lavender;
+    border: 2px solid purple;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Helper classes to control spanning */
+.span-12 { grid-column: span 12; background-color: #ffcccb; } /* Light Red */
+.span-6  { grid-column: span 6;  background-color: #add8e6; } /* Light Blue */
+.span-4  { grid-column: span 4;  background-color: #90ee90; } /* Light Green */
+.span-3  { grid-column: span 3;  background-color: #ffffe0; } /* Light Yellow */
+
+.answers {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.answers h2 { color: blue; }
+.answers h3 { color: green; margin-top: 15px; }

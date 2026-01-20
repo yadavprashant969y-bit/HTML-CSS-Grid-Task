@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Task 9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Task 9: 12-Column Grid System</h1>
+    
+    <div class="container">
+        <div class="box span-12">Header (Spans 12 columns)</div>
+        
+        <div class="box span-6">Content Left (Spans 6 columns)</div>
+        <div class="box span-6">Content Right (Spans 6 columns)</div>
+        
+        <div class="box span-4">Feature 1 (Spans 4 cols)</div>
+        <div class="box span-4">Feature 2 (Spans 4 cols)</div>
+        <div class="box span-4">Feature 3 (Spans 4 cols)</div>
+
+        <div class="box span-3">Small 1 (3 cols)</div>
+        <div class="box span-3">Small 2 (3 cols)</div>
+        <div class="box span-3">Small 3 (3 cols)</div>
+        <div class="box span-3">Small 4 (3 cols)</div>
+
+        <div class="box span-12">Footer (Spans 12 columns)</div>
+    </div>
+
+    <section class="answers">
+        <h2>Answers</h2>
+        
+        <h3>1. Why is 12-column grid popular?</h3>
+        <p>Because 12 is divisible by 2, 3, 4, and 6, making it extremely flexible for creating different layout combinations (halves, thirds, quarters).</p>
+
+        <h3>2. How does spanning help layout?</h3>
+        <p>Spanning allows content to take up specific widths relative to the container, creating structure like sidebars avoiding full-width text everywhere.</p>
+
+        <h3>3. Where is this system used?</h3>
+        <p>It is the standard for most web frameworks like Bootstrap, Tailwind, and professional design systems.</p>
+
+        <h3>4. Can we create layouts without this system?</h3>
+        <p>Yes, but it might be harder to maintain consistency across different pages without a standard grid.</p>
+
+        <h3>5. What happens if column count changes?</h3>
+        <p>If you change from 12 to 10 columns, all your expected spans (like span-6 for half) will break or look different because the math changes.</p>
+    </section>
+</body>
+</html>
