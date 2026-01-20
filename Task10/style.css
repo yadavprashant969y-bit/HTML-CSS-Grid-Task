@@ -1,0 +1,53 @@
+/* Fallback styles for older browsers (if grid is not supported) */
+.container {
+    /* Basic styling for non-grid browsers */
+    border: 2px solid orange;
+    padding: 10px;
+}
+
+.box {
+    background-color: lavender;
+    border: 2px solid purple;
+    padding: 20px;
+    margin-bottom: 10px; /* Vertical stacking */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Modern styles for browsers that support Grid */
+@supports (display: grid) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        background-color: #f0f8ff; /* Light glow to show grid is active */
+    }
+
+    .box {
+        margin-bottom: 0; /* Remove fallback margin */
+    }
+}
+
+.answers {
+    margin-top: 30px;
+}
+
+.main-header {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-header { 
+    color: blue; 
+    font-size: 1.5em; 
+    font-weight: bold; 
+    margin-bottom: 10px;
+}
+
+.question-header { 
+    color: green; 
+    font-weight: bold; 
+    margin-top: 15px; 
+    font-size: 1.17em;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Task 10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-header">Task 10: CSS @supports</div>
+    
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+    <section class="answers">
+        <div class="section-header">Answers</div>
+        
+        <div class="question-header">1. Why do we check browser support?</div>
+        <p>We check browser support to ensure our website looks good even on older browsers that might not understand modern CSS features like Grid.</p>
+
+        <div class="question-header">2. What happens if Grid is not supported?</div>
+        <p>If Grid is not supported and we don't have a fallback, the layout might break. With @supports, we can provide alternative styles (like block or flex) for older browsers.</p>
+
+        <div class="question-header">3. Is this needed for all projects?</div>
+        <p>It depends. For modern projects targeting mostly new devices, it might not be strictly necessary as Grid support is very high (98%+). But for government or enterprise sites supporting old systems, it is crucial.</p>
+
+        <div class="question-header">4. Who uses this in real projects?</div>
+        <p>Developers who need to support legacy browsers (like old Internet Explorer versions) use this technique.</p>
+
+        <div class="question-header">5. What does safe CSS mean?</div>
+        <p>Safe CSS means writing code that doesn't break if a feature isn't supported. It "fails gracefully" using fallbacks.</p>
+    </section>
+</body>
+</html>
