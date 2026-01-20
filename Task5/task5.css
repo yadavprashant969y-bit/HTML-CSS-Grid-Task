@@ -1,0 +1,35 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.box {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.box1 {
+    background-color: lightcoral;
+}
+
+.box2 {
+    background-color: lightgreen;
+}
+
+.box3 {
+    background-color: lightblue;
+}
+
+.box4 {
+    background-color: lightyellow;
+}
+
+.box5 {
+    background-color: lightpink;
+}
+
+.box6 {
+    background-color: lightcyan;
+}
